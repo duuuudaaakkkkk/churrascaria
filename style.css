@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+/* CABEÇALHO */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+#btn-menu {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+
+/* BANNER */
+.banner {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  color: #ffcc00;
+}
+
+.banner p {
+  margin: 10px 0;
+}
+
+.btn {
+  background: #ffcc00;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* SEÇÕES */
+.secao {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.secao h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+/* CARDÁPIO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* CONTATO */
+.whatsapp {
+  display: inline-block;
+  margin-top: 15px;
+  background: green;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* RODAPÉ */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  #btn-menu {
+    display: block;
+  }
+}
